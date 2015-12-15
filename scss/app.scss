@@ -1,0 +1,137 @@
+@charset 'utf-8';
+
+@import 'settings';
+@import 'foundation';
+@import 'motion-ui';
+
+@include foundation-global-styles;
+@include foundation-grid;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-forms;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
+@include foundation-accordion;
+@include foundation-badge;
+@include foundation-breadcrumbs;
+@include foundation-button-group;
+@include foundation-callout;
+@include foundation-close-button;
+@include foundation-drilldown-menu;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
+@include foundation-flex-video;
+@include foundation-label;
+@include foundation-media-object;
+@include foundation-menu;
+@include foundation-off-canvas;
+@include foundation-orbit;
+@include foundation-pagination;
+@include foundation-progress-bar;
+@include foundation-slider;
+@include foundation-sticky;
+@include foundation-reveal;
+@include foundation-switch;
+@include foundation-table;
+@include foundation-tabs;
+@include foundation-thumbnail;
+@include foundation-title-bar;
+@include foundation-tooltip;
+@include foundation-top-bar;
+
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
+@font-face {
+  font-family: 'BrandonGrotesque';
+  src:  url('../fonts/Brandon_reg.otf'),
+}
+
+.button {border-radius: 3px;}
+
+button.secondary, .button.secondary {
+    background-color: transparent;
+    border-color: #FFFFFF !important;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 3px;
+}
+
+button.secondary:hover, .button.secondary:hover {
+    background-color: #ffffff;
+    border-color: #FFFFFF !important;
+    color: #213552;
+    border: 1px solid #fff;
+    border-radius: 3px;
+}
+
+button.dark-secondary, .button.dark-secondary {
+    background-color: transparent;
+    border-color: #213552;
+    color: #213552;
+    border: 1px solid #213552;
+    border-radius: 3px;
+}
+
+button.dark-secondary:hover, .button.dark-secondary:hover {
+    background-color: #213552;
+    border-color: #213552;
+    color: #fff;
+    border: 1px solid #213552;
+    border-radius: 3px;
+}
+
+.tabs {
+	background: transparent;
+    border: none;
+    margin: 0 auto;
+    width: 1146px;
+    font-size: 1.2rem;
+}
+
+.tabs-title > a {
+    padding: 1rem 0rem;
+    margin: 0 .5rem;
+    color: #8495AC
+}
+
+button.orange-secondary, .button.orange-secondary {
+    background-color: transparent;
+    border-color: #f47c21 !important;
+    color: #f47c21;
+    border: 1px solid #f47c21 !important;
+    border-radius: 3px;
+}
+
+button.orange-secondary:hover, .button.orange-secondary:hover {
+    background-color: #f47c21;
+    border-color: #f47c21;
+    color: #ffffff;
+    border: 1px solid #fff;
+    border-radius: 3px;
+}
+
+.popup {
+	box-shadow: 3px 3px 9px 2px rgba(0,0,0,0.25);
+	background-color: $background-blue;
+	.header {background-color: $secondary-color; color: $white; text-align:center; padding: 1.25rem .75rem .75rem;	
+	}
+}
+
+.resource-list {
+	box-shadow: 3px 3px 9px 2px rgba(0,0,0,0.25);
+	background-color: $secondary-blue;
+	.header {background-color: $secondary-color; color: $white; text-align:center; padding: .75rem;	
+	}
+}
+
+.tabs-title > a {font-size: 1rem;}
+
+.tabs-title > a:hover, .tabs-title > a:focus, .tabs-title > a[aria-selected="true"] {
+    background: none;
+    border-bottom: 3px solid $primary-color;
+    font-size: 1rem;
+    color: #Fc7400;
+}
+
+.blue-panel {background: $secondary-blue; border: none;}
